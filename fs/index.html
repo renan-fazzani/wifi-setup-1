@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <script src="captive_portal.js"></script>
+  <link rel="stylesheet" href="captive_portal.css"> 
+</head>
+  <body>
+    <div class="container">
+      <h1 class="">Polar tracker </h1>
+      <div class="form">
+	  <hr/>
+        <div class="">
+		  <div align="center" class="inputWithIcon">
+            <input type="text" id="ssid" placeholder="SSID">
+            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+          </div>
+          <div align="center" class="inputWithIcon">
+            <input type="password" id="pass" placeholder="PASS">
+            <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+          </div>
+          <div align="center" class="form-control">
+            <button class="btn" id="save"onclick="save_cb()"><span id="spinner"></span>Save WiFi</button>
+			<button class="btn" id="info"onclick="myFunction()">Get Info</button>
+			<button class="btn" id="reboot"onclick="reboot()">Reboot</button>
+		  </div>
+          <div align="center" class="form-control">
+            <p><font size="1">Created by Cerebrasc® - 2020</font></p>
+          </div>
+		   <div style="margin-top: 20px; display: block;">
+            <pre id="response"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
